@@ -17,6 +17,16 @@
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="246dp"
+        android:layout_height="587dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:srcCompat="@drawable/ali_el_khazali_tom_door"
+        tools:layout_editor_absoluteY="-193dp" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
@@ -125,6 +135,30 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
+            android:text="Food" />
+
+        <EditText
+            android:id="@+id/editTextText11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Body part" />
+
+        <EditText
+            android:id="@+id/editTextText12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Verb" />
+
+        <EditText
+            android:id="@+id/editTextText13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
             android:text="" />
 
     </LinearLayout>
@@ -156,8 +190,11 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:outlineProvider="paddedBounds"
         android:text="Goofy Murder"
+        android:textColor="@color/red"
         android:textSize="34dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
