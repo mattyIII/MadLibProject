@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mighty Mad Libs"
@@ -64,7 +64,7 @@
         tools:layout_editor_absoluteX="39dp">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/tv_instructions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Provide some words" />
@@ -82,7 +82,7 @@
             android:orientation="horizontal" />
 
         <EditText
-            android:id="@+id/editTextText4"
+            android:id="@+id/et_weapon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -90,23 +90,31 @@
             android:text="Weapon" />
 
         <EditText
-            android:id="@+id/editTextText5"
+            android:id="@+id/et_noun"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:text="Name 1" />
+            android:text="Noun" />
 
         <EditText
-            android:id="@+id/editTextText6"
+            android:id="@+id/et_occupation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:text="Name 2" />
+            android:text="Occupation (as a person Ex. Dentist)" />
 
         <EditText
-            android:id="@+id/editTextText7"
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/et_location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -114,31 +122,23 @@
             android:text="Location" />
 
         <EditText
-            android:id="@+id/editTextText8"
+            android:id="@+id/et_adjective"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:text="Adjective (sounding Ex. loudly)" />
+            android:text="Adjective (sounding Ex. loud)" />
 
         <EditText
-            android:id="@+id/editTextText9"
+            android:id="@+id/et_onomatopoeia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:text="Family Member" />
+            android:text="Onomatopoeia (related to weapon)" />
 
         <EditText
-            android:id="@+id/editTextText10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="text"
-            android:text="Food" />
-
-        <EditText
-            android:id="@+id/editTextText11"
+            android:id="@+id/et_bodypart"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -146,30 +146,31 @@
             android:text="Body part" />
 
         <EditText
-            android:id="@+id/editTextText12"
+            android:id="@+id/et_verb1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:text="Verb" />
+            android:text="Past Tense Verb" />
 
         <EditText
-            android:id="@+id/editTextText13"
+            android:id="@+id/et_verb2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:text="" />
+            android:text="Past Tense Verb (Killing Method Ex. Stab)" />
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_generate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Generate Mad Lib"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="669dp" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        tools:layout_editor_absoluteY="667dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline8"
@@ -177,14 +178,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="168dp" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Theme"
-        tools:layout_editor_absoluteX="184dp"
-        tools:layout_editor_absoluteY="59dp" />
 
     <TextView
         android:id="@+id/textView7"
