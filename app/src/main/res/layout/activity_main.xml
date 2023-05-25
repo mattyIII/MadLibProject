@@ -95,15 +95,15 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:text="Noun" />
+            android:text="Clothes Object" />
 
         <EditText
-            android:id="@+id/et_occupation"
+            android:id="@+id/et_animal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:text="Occupation (as a person Ex. Dentist)" />
+            android:text="Animal" />
 
         <EditText
             android:id="@+id/et_name"
@@ -111,7 +111,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:text="Name" />
+            android:text="Female Name" />
 
         <EditText
             android:id="@+id/et_location"
@@ -146,12 +146,12 @@
             android:text="Body part" />
 
         <EditText
-            android:id="@+id/et_verb1"
+            android:id="@+id/et_object"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:text="Past Tense Verb" />
+            android:text="Instrument" />
 
         <EditText
             android:id="@+id/et_verb2"
@@ -159,7 +159,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:text="Past Tense Verb (Killing Method Ex. Stab)" />
+            android:text="Verb" />
 
     </LinearLayout>
 
@@ -167,7 +167,7 @@
         android:id="@+id/btn_generate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Generate Mad Lib"
+        android:text="Watch"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         tools:layout_editor_absoluteY="667dp" />
@@ -184,7 +184,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:outlineProvider="paddedBounds"
-        android:text="Goofy Murder"
+        android:text="Jom and Terry"
         android:textColor="@color/red"
         android:textSize="34dp"
         android:textStyle="bold"

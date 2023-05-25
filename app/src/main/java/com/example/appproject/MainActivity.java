@@ -15,13 +15,13 @@ public class MainActivity extends AppCompatActivity {
     private TextView tvTitle;
     private EditText etWeapon;
     private EditText etNoun;
-    private EditText etOccupation;
+    private EditText etAnimal;
     private EditText etName;
     private EditText etLocation;
     private EditText etAdjective;
     private EditText etOnomatopoeia;
     private EditText etBodyPart;
-    private EditText etVerb1;
+    private EditText etObject;
     private EditText etVerb2;
 
 
@@ -34,13 +34,13 @@ public class MainActivity extends AppCompatActivity {
         tvTitle = findViewById(R.id.tv_title);
         etWeapon = findViewById(R.id.et_weapon);
         etNoun = findViewById(R.id.et_noun);
-        etOccupation = findViewById(R.id.et_occupation);
+        etAnimal = findViewById(R.id.et_animal);
         etName = findViewById(R.id.et_name);
         etLocation = findViewById(R.id.et_location);
         etAdjective = findViewById(R.id.et_adjective);
         etOnomatopoeia = findViewById(R.id.et_onomatopoeia);
         etBodyPart = findViewById(R.id.et_bodypart);
-        etVerb1 = findViewById(R.id.et_verb1);
+        etObject = findViewById(R.id.et_object);
         etVerb2 = findViewById(R.id.et_verb2);
 
 
@@ -55,21 +55,19 @@ public class MainActivity extends AppCompatActivity {
 
                     String story = "";
 
-                    story += "\nIt's the middle of the night, and YOU are about to murder " + etName.getText() + "...";
-                    story += "\nYou plotted to get revenge because " + etName.getText() + " stole your " + etNoun.getText() + ".";
-                    story += "\nYou met " + etName.getText() + " at " etLocation.getText()
-                    story += "\n" + etName.getText() + "'s house is right next to the " + etLocation.getText() + " so it will easy to sneak into the house."
-                    story += "\nAs you approach the house, you notice that a window is open, so you " + etAdjective.getText() + " make your way inside.";
-                    story += "\nSince " + etName.getText() + " is a " + etOccupation.getText() + ", it is no surprise that a random " + etWeapon.getText() + " would be lying around.";
-                    story += "\nSometimes, he enjoys " + ingVerb + " to and from the " + place + ". ";
-                    story += "\n" + etName. ";
-                    story += "\nBut, his favorite activity is to play " + sport +
-                            " during his free time at the " + place + ". ";
-                    story += "\nSince he is very " + adjective1 + ", he continues to feel "
-                            + emotion1 + " when he plays. ";
-                    story += "\n" + person + " also has a pet " + color + " " + animal + " named " + animalName +
-                            ". He enjoys " + ingVerb2 + " with " + animalName + " when not playing " + sport + ".";
-                    story += "\nAs " + person + " always says \"Be like me, be " + adjective1 + "!\"";
+                    story += "\nIt's the middle of the night, and Jom is up to his usual shenanigans in catching Terry...";
+                    story += "\nUp and down and all around, Jom chased Terry through the " + etLocation.getText() + ".";
+                    story += "\nThen out of the corner of his eye, Jom saw THE Ms. " + etName.getText() + " on her porch.";
+                    story += "\nMadly in love, Jom forgets about Terry and immediately" + etVerb2 + "s to flirt with her.";
+                    story += "\nAs a romantic, Jom brought out his " + etObject.getText() + " from his pocket and begun to play into the night.";
+                    story += "\nTerry, seeing this, has a devious plan to annoy Jom...";
+                    story += "\nJom is too mesmerized by "+ etName.getText() + " to realize Terry had brought a " + etAnimal.getText() + "!";
+                    story += "\nAND " + etOnomatopoeia.getText() + "! The " + etAnimal.getText() + " chomped on Jom's tail!!";
+                    story += "\nJom jumped " + etAdjective.getText()+ "ly but kept his composure to impress " + etName.getText() + " and continued to play.";
+                    story += "\nAnnoyed, Terry tried again...";
+                    story += "\nUsing the same " + etAnimal.getText() + ", Terry hooked Jom's " + etNoun.getText() + " to the animal...";
+                    story += "\nThe " + etAnimal.getText() + " zoomed away and RIP! Jom's " + etNoun.getText() + " was ripped away, exposing his " + etBodyPart.getText() + "!";
+                    story += ""
 
                 }/*else{
 
