@@ -2,6 +2,7 @@ package com.example.appproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -30,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         tvTitle = findViewById(R.id.tv_title);
+
         etWeapon = findViewById(R.id.et_weapon);
         etNoun = findViewById(R.id.et_noun);
         etAnimal = findViewById(R.id.et_animal);
@@ -48,10 +49,10 @@ public class MainActivity extends AppCompatActivity {
 
         // Story
         // The first line is an example, please delete and start your own story
+        Intent intentDisplay = new Intent(this, StoryPage.class);
         btnGenerate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(grade < 9){
 
                     String story = "";
 
@@ -61,33 +62,25 @@ public class MainActivity extends AppCompatActivity {
                     story += "\nMadly in love, Jom forgets about Terry and immediately" + etVerb2 + "s to flirt with her.";
                     story += "\nAs a romantic, Jom brought out his " + etObject.getText() + " from his pocket and begun to play into the night.";
                     story += "\nTerry, seeing this, has a devious plan to annoy Jom...";
-                    story += "\nJom is too mesmerized by "+ etName.getText() + " to realize Terry had brought a " + etAnimal.getText() + "!";
+                    story += "\nJom is too mesmerized by Ms. " + etName.getText() + " to realize Terry had brought a " + etAnimal.getText() + "!";
                     story += "\nAND " + etOnomatopoeia.getText() + "! The " + etAnimal.getText() + " chomped on Jom's tail!!";
-                    story += "\nJom jumped " + etAdjective.getText()+ "ly but kept his composure to impress " + etName.getText() + " and continued to play.";
+                    story += "\nJom jumped " + etAdjective.getText() + "ly but kept his composure to impress Ms. " + etName.getText() + " and continued to play.";
                     story += "\nAnnoyed, Terry tried again...";
                     story += "\nUsing the same " + etAnimal.getText() + ", Terry hooked Jom's " + etNoun.getText() + " to the animal...";
-                    story += "\nThe " + etAnimal.getText() + " zoomed away and RIP! Jom's " + etNoun.getText() + " was ripped away, exposing his " + etBodyPart.getText() + "!";
-                    story += ""
+                    story += "\nThe " + etAnimal.getText() + " zoomed away and RIP! Jom's " + etNoun.getText() + " got ripped away, exposing his " + etBodyPart.getText() + "!";
+                    story += "\nJom turned bright red, embarrassing himself in front of Ms. " + etName.getText() + ", but he didn't give up! ";
+                    story += "\nIn one last attempt to win her over, Jom showed his love through his music amd continued to play his " + etObject.getText() + " into his final song.";
+                    story += "\nTerry also had one last trick up his sleeve...a " + etWeapon.getText();
+                    story += "\nHe tied the " + etWeapon.getText() + " to hang above Jom.";
+                    story += "\nAt long last, Jom reached the finale of his song, putting his heart and soul into the last note.";
+                    story += "\nTerry, grinning wildly, cut the rope, sending the " + etWeapon.getText() + " straight at Jom ANDDD " + etOnomatopoeia.getText() + "!!";
+                    story += "\n" + etName.getText() + " cringed and finally retreated into her home - All of Jom's effort and hard work had turned to nothing...";
+                    story += "\nJom turned hot red, took the " + etWeapon.getText() + " off his face, and began to " + etAdjective.getText() + " chase Terry into the night.";
+                    story += "\nThe End.";
 
-                }/*else{
+                    intentDisplay.putExtra("story", story);
 
-                    story +=("\nEveryone has a thing that leaves them feeling " + emotion1 + ". ");
-                    story +=("Even " + person + " in grade " + grade + " agrees. ");
-                    story +=(person + " is a " + adjective1 + " person who loves "
-                            + nouns2 + ", but he hates " + nouns1 + ". ");
-                    story +=("At the " + place + ", he is renowned for being secretly good at " + sport +
-                            ". But everyone knows that " + celebrity + " is still much better than him. ");
-                    story +=("Sometimes, he enjoys " + ingVerb + " to and from the " + place + ". ");
-                    story +=("Once, he even wrote a best-selling novel called \""
-                            + book + ",\" which can be found in the biggest library in " + city + ". ");
-                    story +=("But, his favorite activity is to play " + sport +
-                            " during his free time at the " + place + ". ");
-                    story +=("Since he is very " + adjective1 + ", he continues to feel "
-                            + emotion1 + " when he plays. ");
-                    story +=ln(person + " also has a pet " + color + " " + animal + " named " + animalName +
-                            ". He enjoys " + ingVerb2 + " with " + animalName + " when not playing " + sport + ".");
-                    story +=("As " + person + " always says \"Be like me, be " + adjective1 + "!\"");
-                }*/
+                    startActivity(intentDisplay);
             }
         });
     }
